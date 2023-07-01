@@ -97,21 +97,21 @@
         </div>
 
         <div class="navbar" id="navbar">
-            <div class="first">
-                <div class="toggleMenu">
+            <div class="first" onclick="showContent('menu','1')">
+                <div id="toggleMenu1" class="toggleMenu">
                     <div id="line1" class="line"></div>
                     <div id="line2" class="line"></div>
                 </div>
                 <div class="menu">Menu</div>
             </div>
-            <div class="second">
-                <mark class="toggleMenu2">
+            <div class="second" onclick="showContent('product','2')">
+                <mark id="toggleMenu2" class="toggleMenu2">
                     <p>&#10005;</p>
                 </mark>
                 <div class="products">Products</div>
             </div>
-            <div class="third">
-                <mark class="toggleMenu3">
+            <div class="third" onclick="showContent('calculator','3')">
+                <mark id="toggleMenu3" class="toggleMenu3">
                     <p>&#10005;</p>
                 </mark>
                 <div class="calculator">Calculator</div>
@@ -124,17 +124,73 @@
             </div>
         </div>
 
-        <div class="sideproduct">
+        <div id="sidemenu" class="sidemenu">
+            <div class="menucontainer">
+                <div class="applications">
+                    <div class="container2">
+                        <div class="dropdown">
+                            <button class="dropbtn">English</button>
+                            <div class="dropdown-content2">
+                                <a href="#">Spanish</a>
+                                <a href="#">Latin</a>
+                                <a href="#">French</a>
+                                <a href="#">English</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Applications</h1>
+                    <h1>Metallisation process</h1>
+                    <h1>ISO 2063 Standard</h1>
+
+                    <p>Products</p>
+                    <p>Calculator</p>
+                    <p>References</p>
+                    <p>Technical Advices</p>
+                    <p>About</p>
+                    <p>Legal mentions</p>
+                    <p>Privacy policy</p>
+                </div>
+                <div class="touch">
+                    <div class="getin">
+                        <b>Contact</b>
+                        <p>Get in touch helps us to understand better</p>
+                    </div>
+                    <div class="access">
+                        <b>Secure space</b>
+                        <p>Access your account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sideproduct" class="sideproduct">
             <div class="productcontainer">
                 <div class="productheadings">
-                    <h1>Wire -</h1>
+                    <h1>Wire-</h1>
                     <h1>Rods</h1>
                     <h1>Berlingots</h1>
                     <h1>Zinc shots</h1>
                 </div>
                 <div class="producttypes">
-                    <div class="zi-al"></div>
-                    <div class="pure"></div>
+                    <div class="zi-al">
+                        <b>ZINC-ALUMINIUM 85/15</b>
+                        <p>ZINACOR®</p>
+                        <span>Z850</span>
+                        <br>
+                        <span>Z851</span>
+                    </div>
+                    <div class="pure">
+                        <b>PURE ZINC</b>
+                        <p>ZINACOR®</p>
+                        <span>Z100</span>
+                        <br>
+                        <span>Z102</span>
+                        <br>
+                        <p>ZINACOR®</p>
+                        <span>Z102</span>
+                        <br>
+                        <div>⌀ 1.20-1.60mm</div>
+                    </div>
                 </div>
                 <div class="others">
                     <div class="tin-zi">
@@ -162,6 +218,15 @@
                         <b>SnZn50</b>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="sidecalculator" class="sidecalculator">
+            <div class="calculatorcontainer">
+                <h1>Calculator</h1>
+                <p>Specially designed for you, this tool will help you estimate, step by step, the thickness of the
+                    coating to apply and the quantity fo wire to use in all your projects, whichever corrosion classes
+                    you work with and the type of wire selected.</p>
             </div>
         </div>
 
